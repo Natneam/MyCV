@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family:'Baloo Chettan 2', cursive;
+}
+
+/* placing all elements in the grid*/
+
+.main_grid_blog{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    background-image: url(../image/background_image.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navigation_bar{
+    grid-column:1/2;
+    grid-row: 1/2;
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+}
+
+nav {
+    margin-bottom: 2rem;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(31, 29, 33,0.5);
+}
+
+.navigation_bar div{
+    margin: 0.5rem 1rem;
+}
+
+.navigation_bar div a{
+    text-decoration: none;
+    color: #479761;
+    font-size: 1.1rem;
+}
+
+.question_number_4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0 10rem;
+    
+}
+
+.question_number_5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 0 10rem;
+}
+
+.question_number_6{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 0 10rem;
+}
+
+.title{
+    font-size: 2rem;
+    width: fit-content;
+    text-align: center;
+    color: #479761;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: #479761 2px solid;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    width: fit-content;
+    text-align: center;
+    color: #479761;
+    padding: 1rem 0;
+}
+
+.date{
+    font-size: 0.8rem;
+    text-align: end;
+    padding-top: 1rem;
+}
+
+.code{
+    padding-left: 2rem;
+    border: #479761 1px solid;
+    border-left: #479761 5px solid;
+}
+
+.blog_footer{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 1erm;
+    padding-left: 1rem;
+
+}
+
+footer ul li a img {
+    margin-top:3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#copy_right{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+article a{
+    text-decoration: none;
+    color: slateblue;
+} 

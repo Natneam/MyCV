@@ -1,0 +1,222 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natneam Mesele - Novice Software Engineer, Web Developer</title>
+    <link rel="shortcut icon" href="assets/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/blog_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+</head>
+<body class="main_grid_blog">
+    <nav class="navigation_bar">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="gallery.html">GALLERY</a></div>
+        <div><a href="contact.html">CONTACT</a></div>
+        <div><a href="blog.html">BLOG</a></div>
+        <div><a href="myworks.html">MY WORKS</a></div>
+    </nav>
+    
+    <section class="question_number_4">
+        <p class="title">EM, REM and % units</p>
+        <article>
+            Before choosing which one is the best for responsiveness of websites lets get know what em, rem, % size units are.
+            <br><br>
+            <h1 class="subtitle" >EM</h1>
+            An EM is a unit of typography, equal to the currently specified font size. The default size of the root(html) font 
+            size is 16px unless specified by the user. This means by default, when we say 1em it means 16px. 
+            <br><br>
+            Lets look at the CSS styles below
+            <br>
+            <br>
+            <div class="code">
+                h1{ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; font-size:1em; /* This means the font size is 16px*/ <br>
+                    &ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace; margin : 2em ; /* This means 2*16px which is 32px*/ <br>
+                } 
+                <br>
+                <br>
+    
+                h1{ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size:2em; /* This means 2*16px = 32px (current font size) */ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin:2em; /* This means 2*32px = 64px*/ <br>
+                } 
+            </div>
+            
+            <br>
+
+            In the first h1 styling code the font size is 1em which is 16px(the default font size as specified 
+            in the browser setting) after wards If we style using em, 1em value is 16px unless we changed the font size. While in the 
+            second h1 styling code the the original font size were 16px but when we change the font size to 2em the current font size 
+            is no longer 16px but 32px after wards if we style using em, 1em will be 32px.
+            <br><br>
+            The em unit is confusing because the value of em could be different in different part of our code.
+            <br>
+            <br>
+            <h1 class="subtitle">REM</h1>
+            
+            An REM is a unit of typography, equal to the root specified font size. When we specify size using rem it means we are 
+            changing the size of the element using the factor of the root font size. In html documents the root is &lt;html&gt; tag. The 
+                end user can change the default font size of the root(&lt;html&gt;) in the browser setting. 
+            <br><br>
+            Lets see the following CSS code snippets
+            <br><br>
+            <div class="code">
+                h1{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size:1rem; /* This means the font size is 16px*/ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin : 2rem ; /* This means 2*16px which is 32 px*/ <br>
+                }
+                <br><br>
+                but 
+                <br><br>
+                h1{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size:2rem; /* This means 2*16px = 32px */ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin:2rem; /* This means 2*16px = 32px */ <br>
+                }
+            </div>
+            <br>
+            <br>
+            In the first code snippet the font size is 16px because it is 1*16px = 16px. The margin is 32px because the root
+             font size is 16px then 2rem = 2 * 16px. Where as in The second code snippet the font size
+             is 32px because 2*16px = 32px. The margin is also 32px because 2rem = 2 * 16px = 32px.
+            <br>
+            <br>
+            <h1 class="subtitle">percentage (%)</h1>
+
+            Percentage unit defines a measurement as a percentage relative to an enclosing element.
+            <br><br>
+            Lets see the following code snippets
+            <br><br>
+            HTML
+            <br><br>
+            <div class="code">
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Hello world&lt;p&gt; <br>
+                &lt;div&gt; <br>
+            </div>
+            <br><br>
+            CSS
+            <br><br>
+            <div class="code">
+                div{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width : 400px;<br>
+                } <br>
+                <br>
+    
+                p{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width : 80%;<br>
+                }
+            </div>
+             <br>
+            <br>
+
+            In the html code the &lt;p&gt; is enclosed in &lt;div&gt; so when we say the width of &lt;p&gt; is 80% it means &lt;p&gt; will take 80% of the &lt;div&gt; which is 400*0.8 = 320px.
+            <br><br>
+            It is not recommended to use percentage unit to specify font size.
+            <br><br><br>
+
+            In my opinion, using rem for  size specification is more suitable because it will save us from the confusion of different em values on different part of our code. Sometime it is 
+            plausible to use percentage unit for width, margin and 
+            padding size specifications. Using em, rem or percentage will make our website responsive (in terms of measurement but not in terms of orientation and automatic element placements) because all are relative to the 
+            device screen size and the browser setting. But we have to be cautious when we use them.
+            <br><br>
+            Sources : <a href="https://zellwk.com/blog/rem-vs-em/" target="_blank">Zellwk</a> and <a href="https://www.tutorialspoint.com/css/css_measurement_units.htm" target="_blank">Tutorials Point</a>
+
+        </article>
+        <p class="date">March 17, 2020</p>
+    </section>
+    <section class="question_number_5">
+        <p class="title">What does it means 'the default browser font size is 16px' </p>
+        <article>
+            When we say The default browser font size is 16px. It means unless we change it in the setting or we zoom, 16px is the size of ordinary texts.
+            When we change it to 200px  the default font size will be 200px. Changing the default font size will result effect on em and rem units to as specified in the previous section.
+            <br><br>
+            Sources : <a href="https://stackoverflow.com/questions/29511983/is-the-default-font-size-of-every-browser-16px-why" target="_blank">Stack Overflow</a>
+        </article>
+        <p class="date">March 17, 2020</p>
+    </section>
+    <section class="question_number_6">
+        <p class="title">Changes In CSS3</p>
+        <article>
+        <div class="subtitle">Mobile-first mentality</div> 
+        Mobile-first mentality is starting developing the web for mobile devices and then using media queries to change the layout as the screen size changes. Media queries
+         are calls made by the code to determine what device and size screen a user is viewing the site on. 
+        <br><br>
+ Example:
+ <br><br>
+	<div class="code">
+        /* Set the background color of body to green */<br><br>
+body { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;background-color:green;<br>
+} <br>
+<br>
+
+/* On screen grater than or equal to 600px, change the background color to red */ <br><br>
+@media screen and (min-width: 600px) { <br>
+      &nbsp;body { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color:red;<br>
+          &nbsp;} <br>
+    } <br><br>
+
+        /* On screen grater than or equal to 800px, change the background color to yellow */ <br><br>
+@media screen and (min-width: 800px) {<br>
+      &nbsp;body {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color:yellow; <br>
+          &nbsp;}<br>
+} <br>
+</div>
+<br><br>
+<div class="subtitle"> Selectors </div>
+In previous version of CSS, we can edit HTML elements property by using their tag name, class or id individually or by listing the hierarchies but in CSS3 it provide 
+a wide variety of selectors to use like 
+<br><br>
+[attr^=val]- matches a HTML element with the attribute attr and a value starting with val <br>
+[attr$=val]- matches a HTML element with the attribute attr and a value ending with val <br>
+[attr*=val]- matches a HTML element with the attribute attr and a value containing the substring val <br><br>
+Backgrounds and borders: CSS3 enables rounded corners on boxes and drop shadows. Before CSS3, backgrounds had to be achieved with images, which added
+ to a page’s file size and load time.
+Text effects - shadow effects, text overflow, word breaking (automatically breaking text so it fits within a box), and text wrapping.
+
+<div class="subtitle">Web font support</div> 
+	It enables to run web fonts from Google Fonts or Typecast. We can download a font to our website directory or we can directly access from the its source online.
+
+<div class="subtitle">2D and 3D transformations, animations, and transitions</div>
+It will allow to us to create animated effects on our web page like rotate, shrink, translate into different colours and the like.
+
+Example <br><br>
+<div class="code">
+    div { <br>
+        transform: rotate(20deg); <br>
+       } <br>
+</div>
+		
+
+<div class="subtitle">New colour scales and image effects</div> 
+    CSS3 added new colours scales like RGBA(red,green,blue,alpha), HSLA(hue, saturation, lightness, aplha) and HSL(hue, saturation, lightness). 
+    It also added image effects like gradient colours adjustments, rounded image corners (border-radius property) and opacity. Which before 
+    requires a lot of work on Photoshop .
+
+<div class="subtitle">Box-sizing</div>  
+	It helps to get the sizing of elements as we want without having to subtract dimensions for padding and borders.
+    <br><br>
+    Source : <a href="https://www.upwork.com/hiring/development/css-vs-css3/" target="_blank">UPWORK</a> , 
+        <a href="https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1" target="_blank">Medium.com</a>
+        and <a href="http://webreference.com/authoring/css3/index-2.html" target="_blank">Web References</a>         
+</article>
+        <p class="date">March 17, 2020</p>
+    </section>
+    
+
+    <footer class="blog_footer">
+        <ul>
+            <li>
+                <a href="http://github.com/Natneam" target="_blank"><img src="assets/image/github_icon.png" alt="Github"></a>
+            </li>
+            <li>
+                <a href="https://t.me/natneam" target="_blank"><img src="assets/image/telegram_icon.png" alt="Telegram"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/natneammesele" target="_blank"><img src="assets/image/twitter_icon.png" alt="Twitter"></a>
+            </li>
+        </ul>
+        <div id="copy_right"> &copy; 2020 Natneam Mesele. All rights Reserved.</div>
+    </footer>
+</body>

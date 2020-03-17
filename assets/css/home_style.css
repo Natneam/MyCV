@@ -81,7 +81,26 @@ nav {
 }
 
 .hobbies_and_interests{
-    width: 30%;
+    width: 25rem;
+    box-shadow: 8px 8px 8px 1px rgba(255, 255, 255,0.1);
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.programming_skills{
+    width: 25rem;
+    box-shadow: 8px 8px 8px 1px rgba(255, 255, 255,0.1);
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.educational_background{
+    width: 25rem;
+    height: 13rem;
+    box-shadow: 8px 8px 8px 1px rgba(255, 255, 255,0.1);
+    transition: 0.3s;
+    border-radius: 15px;
+    text-align: center;
 }
 
 #hobbies_and_interests_title{
@@ -121,6 +140,7 @@ section[class="hobbies_and_interests"]  ul li{
 .educational_background ul li{
     list-style-type: none;
     padding-top: 2rem;
+    padding: 0.5rem;
 }
 
 footer ul{
