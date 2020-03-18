@@ -1,6 +1,4 @@
 * {
-    padding: 0;
-    margin:0;
     font-family:'Baloo Chettan 2', cursive;
 }
 
@@ -16,24 +14,39 @@ body{
     height: auto;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: center;
     align-content: space-around;
+    padding-top: .5rem;
 }
 
 nav {
     margin-bottom: 2rem;
     position: fixed;
     width: 100%;
-    background-color: rgba(31, 29, 33,0.5);
 }
 
 .navigation_bar div{
     margin: 0.5rem 1rem;
+    position: initial;
+    padding: 0;
+    margin: 0;
+    width: auto;
 }
 
 .navigation_bar div a{
     text-decoration: none;
     color: #479761;
     font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+    margin: 0;
+    transition: background-color 2s;
+    transition: color 2s;
+    border-radius: 3px;
+}
+
+.navigation_bar div a:hover{
+    background-color: #479761;
+    color: rgb(0, 0, 0);
 }
 
 .title_myworks{
@@ -56,16 +69,14 @@ nav {
     list-style-type: none;
 }
 
-#number_1{
-    width: 28rem;
+#number_1,#number_2,#number_3{
+    width: 25rem;
+    transition: ease 1s;
 }
 
-#number_2{
-    width: 28rem;
-}
-
-#number_3{
-    width: 28rem;
+#number_1:hover,#number_2:hover,#number_3:hover{
+    width: 24rem;
+    padding: 0 1rem;
 }
 
 
@@ -86,7 +97,7 @@ footer ul li a img {
     height: 1.5rem;
 }
 
-#copy_right{
+footer div{
     text-align: center;
     font-size: 0.8rem;
 }

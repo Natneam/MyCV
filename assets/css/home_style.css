@@ -111,11 +111,18 @@ nav {
 
 .educational_background{
     width: 25rem;
-    height: 13rem;
+    height: 14.5rem;
     box-shadow: 8px 8px 8px 1px rgba(255, 255, 255,0.1);
     transition: 0.3s;
     border-radius: 15px;
     text-align: center;
+}
+
+.hobbies_and_interests  div{
+    font-size: 1rem;
+    text-align: center;
+    list-style-type: none;
+    padding:0.5rem 0;
 }
 
 #hobbies_and_interests_title{
@@ -125,11 +132,10 @@ nav {
     padding-top: 2.5rem;
 }
 
-section[class="hobbies_and_interests"]  ul li{
-    font-size: 1rem;
+.programming_skills div {
     text-align: center;
     list-style-type: none;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
 #programming_skills_title{
@@ -139,8 +145,7 @@ section[class="hobbies_and_interests"]  ul li{
     padding-top: 2.5rem;
 }
 
-.programming_skills ul li {
-    text-align: center;
+.educational_background div{
     list-style-type: none;
     padding: 0.5rem;
 }
@@ -150,12 +155,6 @@ section[class="hobbies_and_interests"]  ul li{
     font-weight: bold;
     text-align: center;
     padding-top: 2.5rem;
-}
-
-.educational_background ul li{
-    list-style-type: none;
-    padding-top: 2rem;
-    padding: 0.5rem;
 }
 
 footer ul{
