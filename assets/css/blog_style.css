@@ -74,6 +74,27 @@ nav {
     padding: 0 10rem;
 }
 
+@media all and (max-width:480px){
+    .question_number_4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0 1rem;
+        
+    }
+    
+    .question_number_5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0 1rem;
+    }
+    
+    .question_number_6{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0 1rem;
+    }
+}
+
 .title{
     font-size: 2rem;
     width: fit-content;
